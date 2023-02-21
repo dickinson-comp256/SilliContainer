@@ -1,0 +1,10 @@
+
+machine ()
+{
+  java -jar -Dsun.java2d.xrender=false /home/student/AsmMachine/Machine/bin/Machine.jar $@
+}
+
+assembler ()
+{
+  java -jar -Dsun.java2d.xrender=false /home/student/AsmMachine/Assembler/bin/Assembler.jar $@
+}
