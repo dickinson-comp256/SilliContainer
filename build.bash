@@ -1,7 +1,7 @@
 # Build and push the multi-architectrue images.
 
-DOCKER_HUB_USER="braughtg"           # Replace with DockerHub username
-IMAGE="comp256-assembly"                     # Replace with Image name
+DOCKER_HUB_USER="braughtg"        # Replace with DockerHub username
+IMAGE="comp256-silli"             # Replace with Image name
 TAG="1.0.0"                       # Replace with Image tag.
 
 LOGGED_IN=$(cat ~/.docker/config.json 2> /dev/null | grep "index.docker.io" | wc -l | cut -f 8 -d ' ')

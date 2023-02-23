@@ -12,10 +12,9 @@ USER student
 WORKDIR /home/student
 # Add tools and configuration specificially for the student user here
 
-# Get the machine and assembler code.
-RUN git clone https://github.com/dickinson-comp256/AsmMachine.git
+# Get the silli starter code.
+RUN git clone https://github.com/dickinson-comp256/Silli.git
 
-# Add shortcuts commands for machine and assembler.
-COPY --chown=$USERNAME:$USERNAME ./bash_aliases_add ./bash_aliases_add
-RUN cat ./bash_aliases_add >> .bash_aliases \
- && rm ./bash_aliases_add
+# Install some useful VSCodium extensions for Java.
+RUN codium --install-extension streetsidesoftware.code-spell-checker \
+ && codium --install-extension redhat.java
